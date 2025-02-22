@@ -21,7 +21,7 @@ function App() {
       </header>
       <main>
       <Routes>         
-        <Route path="/" element={<AppLandingHero/>} />
+        <Route path="/MyFridge" element={<AppLandingHero/>} />
         <Route path="/choice" element={<Choice/>} />
         <Route path="/scan" element={<Scan/>} />
         <Route path="/fridge" element={<Fridge/>} />
@@ -41,7 +41,7 @@ function App() {
 
 function HeaderSwitcher() {
   const location = useLocation(); 
-  if(location.pathname === "/" || location.pathname === "/choice" ){
+  if(location.pathname === "/MyFridge" || location.pathname === "/choice" ){
     return <AppHeader/>;
   }
   if(location.pathname === "/fridgeGuest"){
